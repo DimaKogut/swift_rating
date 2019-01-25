@@ -14,6 +14,11 @@
 		5D039FF321F682B90095617E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D039FF121F682B90095617E /* LaunchScreen.storyboard */; };
 		5D039FFE21F682BA0095617E /* RaitingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D039FFD21F682BA0095617E /* RaitingsTests.swift */; };
 		5D03A00921F682BA0095617E /* RaitingsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D03A00821F682BA0095617E /* RaitingsUITests.swift */; };
+		5D82636821F92EF9008324AE /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D82636721F92EF9008324AE /* PlayersViewController.swift */; };
+		5D82636A21F9317F008324AE /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D82636921F9317F008324AE /* Player.swift */; };
+		5D82636C21F93303008324AE /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D82636B21F93303008324AE /* SampleData.swift */; };
+		5D82636E21F93664008324AE /* PlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D82636D21F93664008324AE /* PlayersViewController.swift */; };
+		5D82637021FA83EE008324AE /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D82636F21FA83EE008324AE /* PlayerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		5D03A00421F682BA0095617E /* RaitingsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RaitingsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D03A00821F682BA0095617E /* RaitingsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaitingsUITests.swift; sourceTree = "<group>"; };
 		5D03A00A21F682BA0095617E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D82636721F92EF9008324AE /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlayersViewController.swift; path = Raitings/PlayersViewController.swift; sourceTree = SOURCE_ROOT; };
+		5D82636921F9317F008324AE /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		5D82636B21F93303008324AE /* SampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		5D82636D21F93664008324AE /* PlayersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayersViewController.swift; sourceTree = "<group>"; };
+		5D82636F21FA83EE008324AE /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +110,10 @@
 				5D039FE821F682B60095617E /* AppDelegate.swift */,
 				5D039FEA21F682B60095617E /* ViewController.swift */,
 				5D039FEC21F682B70095617E /* Main.storyboard */,
+				5D82636D21F93664008324AE /* PlayersViewController.swift */,
+				5D82636F21FA83EE008324AE /* PlayerCell.swift */,
+				5D82636921F9317F008324AE /* Player.swift */,
+				5D82636B21F93303008324AE /* SampleData.swift */,
 				5D039FEF21F682B90095617E /* Assets.xcassets */,
 				5D039FF121F682B90095617E /* LaunchScreen.storyboard */,
 				5D039FF421F682BA0095617E /* Info.plist */,
@@ -121,6 +135,7 @@
 			children = (
 				5D03A00821F682BA0095617E /* RaitingsUITests.swift */,
 				5D03A00A21F682BA0095617E /* Info.plist */,
+				5D82636721F92EF9008324AE /* PlayersViewController.swift */,
 			);
 			path = RaitingsUITests;
 			sourceTree = "<group>";
@@ -256,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D82637021FA83EE008324AE /* PlayerCell.swift in Sources */,
 				5D039FEB21F682B60095617E /* ViewController.swift in Sources */,
+				5D82636A21F9317F008324AE /* Player.swift in Sources */,
 				5D039FE921F682B60095617E /* AppDelegate.swift in Sources */,
+				5D82636E21F93664008324AE /* PlayersViewController.swift in Sources */,
+				5D82636C21F93303008324AE /* SampleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D03A00921F682BA0095617E /* RaitingsUITests.swift in Sources */,
+				5D82636821F92EF9008324AE /* PlayersViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +453,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YFQMDTHE2D;
 				INFOPLIST_FILE = Raitings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dimakohut.Raitings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,6 +471,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YFQMDTHE2D;
 				INFOPLIST_FILE = Raitings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -458,7 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dimakohut.Raitings;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
